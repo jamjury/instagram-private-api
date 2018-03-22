@@ -2,6 +2,9 @@ var _ = require('lodash');
 const EXPERIMENTS = require('./experiments.json')
 
 const ROUTES = {
+    // News about new likes, followers, comments
+    newsInbox: 'news/inbox/',
+
     follow: 'friendships/create/<%= id %>/',
     unfollow: 'friendships/destroy/<%= id %>/',
     expose: 'qe/expose/',
